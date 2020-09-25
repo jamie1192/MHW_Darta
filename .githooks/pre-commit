@@ -1,0 +1,4 @@
+#!/bin/sh
+
+flutter analyze
+flutter test
