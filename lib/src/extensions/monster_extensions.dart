@@ -24,5 +24,5 @@ extension MonsterExtensions on Monster {
 
   /// Convenience getter to return either the [Monster] icon asset,
   /// or fall back to the question mark icon.
-  String get assetName => '${icon}' ?? 'questionMark';
+  String get assetName => '${id}' ?? 'questionMark';
 }
