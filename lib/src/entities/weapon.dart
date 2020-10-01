@@ -11,6 +11,7 @@ import 'package:mhw_darta/src/enums/weapon_type.dart';
 
 class Weapon extends Equatable {
   final int id;
+  final String name;
   final int orderId;
   final WeaponType weaponType;
   final Rarity rarity;
@@ -59,6 +60,7 @@ class Weapon extends Equatable {
 
   const Weapon({
     @required this.id,
+    @required this.name,
     @required this.orderId,
     @required this.weaponType,
     @required this.rarity,
@@ -106,6 +108,7 @@ class Weapon extends Equatable {
   List<Object> get props {
     return [
       id,
+      name,
       orderId,
       weaponType,
       rarity,
