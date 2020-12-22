@@ -19,10 +19,9 @@ extension MonsterExtensions on Monster {
     return temp;
   }
 
-  bool _isWeak(int weaknessVal, int condition) =>
-      weaknessVal != null && weaknessVal > condition;
+  bool _isWeak(int weaknessVal, int condition) => weaknessVal > condition;
 
   /// Convenience getter to return either the [Monster] icon asset,
   /// or fall back to the question mark icon.
-  String get assetName => '${id}' ?? 'questionMark';
+  String get assetName => '${id}';
 }

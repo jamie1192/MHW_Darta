@@ -2,6 +2,7 @@ import 'package:flutter_test/flutter_test.dart';
 import 'package:mhw_darta/src/entities/monster.dart';
 import 'package:mhw_darta/extensions.dart';
 import 'package:mhw_darta/src/enums/element_type.dart';
+import 'package:mhw_darta/src/enums/monster_size.dart';
 
 void main() {
   final monsterList = [
@@ -14,6 +15,7 @@ void main() {
       weaknessThunder: 3,
       weaknessWater: 0,
       weaknessDragon: 2,
+      size: MonsterSize.large,
     ),
     Monster(
       id: 2,
@@ -24,6 +26,7 @@ void main() {
       weaknessThunder: 0,
       weaknessWater: 0,
       weaknessDragon: 1,
+      size: MonsterSize.large,
     ),
     Monster(
       id: 3,
@@ -34,6 +37,7 @@ void main() {
       weaknessThunder: 0,
       weaknessWater: 0,
       weaknessDragon: 2,
+      size: MonsterSize.large,
     ),
     Monster(
       id: 4,
@@ -44,6 +48,7 @@ void main() {
       weaknessThunder: 0,
       weaknessWater: 0,
       weaknessDragon: 1,
+      size: MonsterSize.large,
     ),
   ];
 

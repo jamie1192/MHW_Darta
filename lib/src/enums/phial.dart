@@ -1,6 +1,7 @@
 import 'package:flutter/foundation.dart';
 
 enum Phial {
+  none,
   dragon,
   exhaust,
   impact,

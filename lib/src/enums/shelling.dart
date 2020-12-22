@@ -1,6 +1,7 @@
 import 'package:flutter/foundation.dart';
 
 enum Shelling {
+  none,
   normal,
   long,
   wide,

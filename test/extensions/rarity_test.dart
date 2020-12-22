@@ -15,7 +15,7 @@ void main() {
 
       expect(Rarity.r5.rarityColor, equals(Color(0xFF418189)));
 
-      expect(Rarity.r6.rarityColor, equals(Color(0xFF58349b)));
+      expect(Rarity.r6.rarityColor, equals(Color(0xFF88349B)));
 
       expect(Rarity.r7.rarityColor, equals(Color(0xFF9D93E7)));
 

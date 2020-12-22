@@ -9,4 +9,5 @@ export 'src/enums/monster_size.dart';
 export 'src/enums/phial.dart';
 export 'src/enums/rarity.dart';
 export 'src/enums/shelling.dart';
+export 'src/enums/special_ammo_type.dart';
 export 'src/enums/weapon_type.dart';

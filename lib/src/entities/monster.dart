@@ -1,25 +1,24 @@
 import 'package:equatable/equatable.dart';
-import 'package:flutter/foundation.dart';
 import 'package:mhw_darta/src/enums/monster_size.dart';
 
 class BaseMonsterEntity extends Equatable {
   final int id;
   final int orderId;
-  final String name;
+  final String? name;
 
   const BaseMonsterEntity({
-    this.id,
-    this.orderId,
+    required this.id,
+    required this.orderId,
     this.name,
   });
 
   @override
-  List<Object> get props => [id, orderId, name];
+  List<Object?> get props => [id, orderId, name];
 }
 
 class Monster extends BaseMonsterEntity {
   final MonsterSize size;
-  final String icon;
+  final String? icon;
   final bool isPitfallTrappable;
   final bool isShockTrappable;
   final bool isVineTrappable;
@@ -48,56 +47,56 @@ class Monster extends BaseMonsterEntity {
   final int altWeaknessBlast;
   final int altWeaknessStun;
   // ailments
-  final String ailmentRoar;
-  final String ailmentWind;
-  final String ailmentTremor;
-  final String ailmentDefenseDown;
-  final String ailmentFireblight;
-  final String ailmentWaterblight;
-  final String ailmentThunderblight;
-  final String ailmentIceblight;
-  final String ailmentDragonblight;
-  final String ailmentBlastblight;
-  final String ailmentRegional;
-  final String ailmentPoison;
-  final String ailmentSleep;
-  final String ailmentParalysis;
-  final String ailmentBleed;
-  final String ailmentStun;
-  final String ailmentMud;
-  final String ailmentEffluvia;
+  final String? ailmentRoar;
+  final String? ailmentWind;
+  final String? ailmentTremor;
+  final String? ailmentDefenseDown;
+  final String? ailmentFireblight;
+  final String? ailmentWaterblight;
+  final String? ailmentThunderblight;
+  final String? ailmentIceblight;
+  final String? ailmentDragonblight;
+  final String? ailmentBlastblight;
+  final String? ailmentRegional;
+  final String? ailmentPoison;
+  final String? ailmentSleep;
+  final String? ailmentParalysis;
+  final String? ailmentBleed;
+  final String? ailmentStun;
+  final String? ailmentMud;
+  final String? ailmentEffluvia;
 
   const Monster({
-    @required int id,
-    @required int orderId,
-    @required String name,
-    this.size,
+    required int id,
+    required int orderId,
+    String? name,
+    required this.size,
     this.icon,
-    this.isPitfallTrappable,
-    this.isShockTrappable,
-    this.isVineTrappable,
-    this.hasWeakness,
-    this.hasAltWeakness,
-    this.weaknessFire,
-    this.weaknessWater,
-    this.weaknessIce,
-    this.weaknessThunder,
-    this.weaknessDragon,
-    this.weaknessPoison,
-    this.weaknessSleep,
-    this.weaknessParalysis,
-    this.weaknessBlast,
-    this.weaknessStun,
-    this.altWeaknessFire,
-    this.altWeaknessWater,
-    this.altWeaknessIce,
-    this.altWeaknessThunder,
-    this.altWeaknessDragon,
-    this.altWeaknessPoison,
-    this.altWeaknessSleep,
-    this.altWeaknessParalysis,
-    this.altWeaknessBlast,
-    this.altWeaknessStun,
+    this.isPitfallTrappable = false,
+    this.isShockTrappable = false,
+    this.isVineTrappable = false,
+    this.hasWeakness = false,
+    this.hasAltWeakness = false,
+    this.weaknessFire = 0,
+    this.weaknessWater = 0,
+    this.weaknessIce = 0,
+    this.weaknessThunder = 0,
+    this.weaknessDragon = 0,
+    this.weaknessPoison = 0,
+    this.weaknessSleep = 0,
+    this.weaknessParalysis = 0,
+    this.weaknessBlast = 0,
+    this.weaknessStun = 0,
+    this.altWeaknessFire = 0,
+    this.altWeaknessWater = 0,
+    this.altWeaknessIce = 0,
+    this.altWeaknessThunder = 0,
+    this.altWeaknessDragon = 0,
+    this.altWeaknessPoison = 0,
+    this.altWeaknessSleep = 0,
+    this.altWeaknessParalysis = 0,
+    this.altWeaknessBlast = 0,
+    this.altWeaknessStun = 0,
     this.ailmentRoar,
     this.ailmentWind,
     this.ailmentTremor,
@@ -123,7 +122,7 @@ class Monster extends BaseMonsterEntity {
         );
 
   @override
-  List<Object> get props => [
+  List<Object?> get props => [
         super.id,
         super.orderId,
         super.name,
