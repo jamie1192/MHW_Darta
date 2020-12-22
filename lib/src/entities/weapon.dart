@@ -108,8 +108,8 @@ class Weapon extends BaseNode {
   @override
   List<Object?> get props {
     return [
-      id,
-      parentId,
+      super.id,
+      super.parentId,
       name,
       orderId,
       weaponType,
